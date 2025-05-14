@@ -45,7 +45,7 @@
 
 ## 5. Документация и API
 - **Swagger UI**: `http://localhost:8001/docs`  
-- **Postman**: коллекция `/postman/FileAnalysisService.postman_collection.json`  
+- **Postman**: коллекция `./postman/New Collection.postman_collection.json`  
 
 ## 6. Тесты и покрытие 
 - Покрытие бизнес-логики Unit-тестами составляет 85 %, что больше требуемых 65 %

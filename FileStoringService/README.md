@@ -33,7 +33,7 @@
 
 ## 5. Документация и API
 - **Swagger UI**: `http://localhost:8000/docs`  
-- **Postman**: коллекция `/postman/FileStoringService.postman_collection.json`  
+- **Postman**: коллекция `./postman/New Collection.postman_collection.json`  
 
 ## 6. Тесты и покрытие
 - Покрытие бизнес-логики Unit-тестами составляет 86 %, что больше требуемых 65 %
@@ -50,5 +50,5 @@
   ```bash
   pytest
   ```
-  
+
 ![alt text](photo.png)
