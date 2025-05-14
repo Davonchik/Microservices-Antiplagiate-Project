@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "33cf0df4-e837-438d-b9ee-7552fb8976cf",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44501372",
+		"_collection_link": "https://davidaslanyan.postman.co/workspace/David-Aslanyan's-Workspace~4f7ea911-9b24-4655-80d8-dae0ad7288e5/collection/44501372-33cf0df4-e837-438d-b9ee-7552fb8976cf?action=share&source=collection_link&creator=44501372"
+	},
+	"item": [
+		{
+			"name": "files/download/{file_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file_storing_service/files/download/95f858a2-0ff9-44e5-b539-88891e5ccb15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file_storing_service",
+						"files",
+						"download",
+						"95f858a2-0ff9-44e5-b539-88891e5ccb15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "files/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/dgaslanian/Desktop/h.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/file_storing_service/files/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file_storing_service",
+						"files",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "analyze_file/analyze",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"file_id\": \"aa4d1bc4-25cb-4dd0-af31-951aff8d8cbe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/file_analisys_service/analyze_file/analyze?file_id=3c220d05-5079-4253-a3d7-6743d7d8cea6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file_analisys_service",
+						"analyze_file",
+						"analyze"
+					],
+					"query": [
+						{
+							"key": "file_id",
+							"value": "3c220d05-5079-4253-a3d7-6743d7d8cea6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "results/download/{location}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file_analisys_service/results/download/3c220d05-5079-4253-a3d7-6743d7d8cea6.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file_analisys_service",
+						"results",
+						"download",
+						"3c220d05-5079-4253-a3d7-6743d7d8cea6.png"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

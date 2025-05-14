@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python byte-compiled and cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Docker Compose overrides (if any)
+docker-compose.override.yml
+
+# Log files
+*.log
+
+# IDE/editor folders
+.vscode/
+.idea/
